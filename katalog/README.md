@@ -2,6 +2,8 @@ Nama    : Shayna Putri Fitria
 NPM     : 2106703084
 Kelas   : PBP - F
 
+Heroku app --> https://shaynaskatalog.herokuapp.com/katalog/ 
+
 1. Buatlah bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html;
 
     ## Link GDrive
@@ -22,5 +24,13 @@ Kelas   : PBP - F
 
 3. Jelaskan bagaimana cara kamu mengimplementasikan poin 1 sampai dengan 4 di atas.
 
+    ## Membuat sebuah fungsi pada views.py yang dapat melakukan pengambilan data dari model dan dikembalikan ke dalam sebuah HTML.
+    a. Membuat fungsi pada views.py di folder katalog bernama show_katalog. Fungsi tersebut menerima sebuah database dari Model yang kemudian di render ke template html dan kemudian ditampilkan sesuai dengan template tersebut.
+    ## Membuat sebuah routing untuk memetakan fungsi yang telah kamu buat pada views.py.
+    b. Membuat file pada aplikasi katalog bernama urls.py untuk melakukan routing terhadap fungsi views dengan menjalankan fungsi show_katalog pada URL patterns aplikasi katalog
+    ## Memetakan data yang didapatkan ke dalam HTML dengan sintaks dari Django untuk pemetaan data template.
+    c. Pada step sebelumnya, sebuah fungsi pada views.py akan digunakan untuk mengambil fungsi query ke database dari Model CatalogItem yang kemudian disimpan pada variabel context. Django akan memunculkan data tersebut pada halaman HTML.
+    ## Melakukan deployment ke Heroku terhadap aplikasi yang sudah kamu buat sehingga nantinya dapat diakses oleh teman-temanmu melalui Internet.
+    d. Membuat sebuah aplikasi baru pada Heroku yang kemudian API KEY dan APP NAME nya disimpan dalam secrets pada repository yang digunakan. Menghubungkan Heroku dengan Github dan melakukan deploy aplikasi katalog
     
 
