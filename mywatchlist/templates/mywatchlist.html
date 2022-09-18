@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <body>
+    <h1><center>Tugas 3 PBP/PBD</center></h1>
+
+    <h5><center>Name: </center></h5>
+    <p><center>{{nama}}</center></p>
+
+    <h5><center>Student ID: </center></h5>
+    <p><center>2106703084</center></p>
+  </body>
+
+  <style>
+    table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    }
+    th, td {
+      background-color: #F5C6AA;
+    }
+    body, table {
+      background-color: #b2cee0;
+    }
+    h5 {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <table align="center"> 
+    <tr>
+      <th>Watched</th>
+      <th>Title</th>
+      <th>Rating</th>
+      <th>Release Date</th>
+      <th>Review</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+
+    {% for barang in list_barang %}
+      <tr>
+          <th>{{barang.watched}}</th>
+          <th>{{barang.title}}</th>
+          <th>{{barang.rating}}</th>
+          <th>{{barang.release_date}}</th>
+          <th>{{barang.review}}</th>
+      </tr>
+    {% endfor %}
+
+  </table>
+
+ {% endblock content %}

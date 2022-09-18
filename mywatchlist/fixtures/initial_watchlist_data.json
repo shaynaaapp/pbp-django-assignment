@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.mywatchlistitem",
+        "pk":1,
+        "fields":{
+            "watched":"Sudah Ditonton",
+            "title":"Spiderman: No Way Home",
+            "rating": "4",
+            "release_date":"15/12/21",
+            "review":"In a word, amazing!!!!!!! In other words, it's the kind of experience that you have to see to believe!!!!"
+        }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":2,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Doctor Strange in the Multiverse of Madness",
+        "rating": "3",
+        "release_date":"05/05/22",
+        "review":"Finally a marvel movie that is serious,  more violent, and a bit amount of gore for a pg-13 rating which is pretty good use for it"
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":3,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Thor: Love and Thunder",
+        "rating": "3",
+        "release_date":"06/07/22",
+        "review":"This movie was amazing it is a thrill riding action-packed, emotional romantic journey and it is quite funny too."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":4,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Jurassic World Dominion",
+        "rating": "3",
+        "release_date":"08/06/22",
+        "review":"The movie has great movie script writing and special effects as well as great directing by Collin Trevorrow."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":5,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Mencuri Raden Saleh",
+        "rating": "4",
+        "release_date":"25/08/22",
+        "review":"This movie was a lot better than I expected. At first I thought it would be a bit cheesy especially looking at the cast that consisted of young actors and actresses."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":6,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Up",
+        "rating": "4",
+        "release_date":"29/07/09",
+        "review":"This movie was one of my favorites when I was growing up."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":7,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Inside Out",
+        "rating": "4",
+        "release_date":"19/08/15",
+        "review":"This is one of the most brilliant movies I've ever seen. The filmmakers did some deep research into how the human brain works and it deffinately shows."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":8,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Coco",
+        "rating": "4",
+        "release_date":"22/11/17",
+        "review":"What a wonderful movie!!!  I really love the message about bringing people together through music and family."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":9,
+    "fields":{
+        "watched":"Belum Ditonton",
+        "title":"The Book of Life",
+        "rating": "3",
+        "release_date":"17/10/14",
+        "review":"In an emotional perspective, wasn't tearful but enough to make you go aww. But in a creative, design, and plot perspective, it's ABSOLUTE ART."
+    }
+},
+{
+    "model":"mywatchlist.mywatchlistitem",
+    "pk":10,
+    "fields":{
+        "watched":"Sudah Ditonton",
+        "title":"Encanto",
+        "rating": "3",
+        "release_date":"24/11/21",
+        "review":"Encanto is an amazing film full of teachings that brings big surprises and great emotions to the public."
+    }
+}
+]
