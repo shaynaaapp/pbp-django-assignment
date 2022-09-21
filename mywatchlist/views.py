@@ -8,16 +8,24 @@ def show_mywatchlist(request):
     
     count = 0
     elses = 0
+    success = ""
+
     for data in data_watchlist:
         if data.watched == "Sudah Ditonton":
             count = count + 1
         else:
             elses = elses + 1
 
+    if count > elses:
+        success = "Selamat, kamu sudah banyak menonton!"
+    else:
+        success = "Wah, kamu masih sedikit menonton!"
+
     context = {
         'nama': 'Shayna Putri Fitria',
         'watchedTrue': count,
-        'watchedFalse': elses
+        'watchedFalse': elses,
+        'watchedMany': success
     }
     return render(request, "home.html", context)
 

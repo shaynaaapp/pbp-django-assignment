@@ -1,3 +1,23 @@
-from django.test import TestCase
+# from django.test import TestCase
+# from mywatchlist.models import MyWatchListItem
 
 # Create your tests here.
+
+from django.test import TestCase, Client
+
+class TestUrl(TestCase):
+    def test_html_url(self):
+        client = Client()
+        response = client.get('http://localhost:8000/mywatchlist/html/')
+        self.assertEquals(response.status_code, 200)
+
+    def test_json_url(self):
+        client = Client()
+        response = client.get('http://localhost:8000/mywatchlist/json/')
+        self.assertEquals(response.status_code, 200)
+
+    def test_xml_url(self):
+        client = Client()
+        response = client.get('http://localhost:8000/mywatchlist/xml/')
+        self.assertEquals(response.status_code, 200)
+
