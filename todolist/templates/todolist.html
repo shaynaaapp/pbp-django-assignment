@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <body>
+    <h1 style="font-family:'Courier New'"><strong><center>🗓️TODOLIST🗓️</center></strong></h1>
+    <h2 style="font-family:'Courier New'"><center>Name: {{nama}}</center></h2><br>
+
+    <div class="button-task">
+        <button><a href="create-task/">Tambah Task Baru</a></button>
+        <div class="space"></div>
+        <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+    </div>
+
+  </body>
+
+  <style>
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+    th, td {
+        background-color: #E4E9BE;
+        padding: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    body, table {
+        margin-top: 20px;
+        background-color: #ECB390;
+    }
+    h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .space {
+        width: 4px;
+        height: auto;
+        display: inline-block;
+    }
+    .button-task {
+        text-align: center;
+    }
+  </style>
+
+  <table align="center" > 
+    <thread><tr>
+        <th>Tanggal</th>
+        <th>Judul</th>
+        <th>Deskripsi</th>
+        <th>Status</th>
+        <th>Pilihan</th>
+    </tr></thread>
+
+    {% for list in todo_list %}
+      <tr>
+        <td>{{list.date}}</td>
+        <td>{{list.title}}</td>
+        <td>{{list.description}}</td>
+        <td>
+            {% if list.is_finished %}
+                Selesai
+                {% else %}
+                Belum Selesai
+                {% endif%}
+        </td>
+        <td>
+          <button><a href="{% url 'todolist:status' list.id %}">Ubah Status</a></button>
+          <button><a href="{% url 'todolist:delete' list.id %}">Hapus Task</a></button>
+            
+        </td>
+      </tr>
+    {% endfor %}
+
+  </table>
+
+ {% endblock content %}
