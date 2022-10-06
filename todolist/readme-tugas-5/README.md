@@ -33,14 +33,14 @@ Link Aplikasi: https://shaynaskatalog.herokuapp.com/todolist/
 - < button > untuk membuat button
 - < label > untuk membuat label elemen
 
-## **Jelaskan tipe-tipe CSS selector yang kamu ketahui.**
+## **3. Jelaskan tipe-tipe CSS selector yang kamu ketahui.**
 - Element Eelector: Menseleksi berdasarkan elemennya
 - Id Selector: Menseleksi berdasarkan id attribute sebuah elemennya
 - Class Selector: Menseleksi elemen-elemen yang ada pada sebuah class spesifik
 - Universal Selector: Untuk semua elemen HTML pada halaman tersebut
 - Grouping Selector: Menseleksi semua elemen HTML yang memiliki style yang sama untuk dijadikan satu
 
-## **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.**
+## **4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.**
 - Menghubungkan HTML dengan Bootstrap dengan memasukan source pada heading
 - Kustomisasi halaman dengan fitur-fitur yang tersedia di Bootstrap 
 
@@ -48,4 +48,5 @@ Link Aplikasi: https://shaynaskatalog.herokuapp.com/todolist/
 
 - Menambahkan kustomisasi design pada file HTML
 - Menambahkan kode untuk media screen untuk membuat website menjadi responsive dengan maximum width 700px. Artinya, akan menjadi responsive atau menyesuaikan ketika halaman web berukuran 700px atau kurang
+- Menggunakan beberapa gabungan penulisan CSS, diantaranya adalah inline CSS dan internal CSS
 
