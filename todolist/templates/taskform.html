@@ -6,26 +6,40 @@
 {% endblock meta %}
 
 {% block content %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
 
 <div class = "add">
-    <h1 style="font-family:'Courier New'"><center>✅What Should Be Done✅</center></h1>
+    <h1 style="font-family:'Courier New'"><strong><center>✅What Should Be Done✅</center></strong></h1>
 
     <form method="POST" action="">
         {% csrf_token %}
-        <table align="center">
-            <tr>
-                <td>Todo:</td>
-                <td><input type="text" name="title" placeholder="What to do?" class="form-control"></td>
-            </tr>
+        <!-- <table align="center"> -->
+            <div class="form-group">
+                <label><strong>Todo:</strong></label>
+                <input type="text" name="title" placeholder="What to do?" class="form-control">
+            </div>
+            <div class="form-group">
+                <label><strong>Description: </strong></label>
+                <input type="text" name="description" placeholder="What's it about?" class="form-control">
+            </div>
                     
-            <tr>
+            <!-- <tr>
                 <td>Description: </td>
                 <td><input type="text" name="description" placeholder="What's it about?" class="form-control"></td>
-            </tr>
-        </table>
+            </tr> -->
+        <!-- </table> -->
 
-        <input type="submit" name="submit" value="Add Task" style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 5px; margin: 10px;"/>
-        <input type="button" value="Back" onclick="history.back()" style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 5px; margin: 10px;"/>
+        <input type="submit" name="submit" value="Add Task" style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 5px; margin: 10px;" class="btn btn-light"/>
+        <input type="button" value="Back" onclick="history.back()" style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 5px; margin: 10px;" class="btn btn-light"/>
     </form>
 
 </div>
@@ -47,10 +61,22 @@
     }
     body {
         background-color: #B6E388;
+        margin: 20px;
     }
     h1 {
         font-size: 40px;
         margin-bottom: 50px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-control {
+        size: 100px;
+    }
+    @media screen and (max-width: 700px) {
+      .column {
+        width: 100%;
+      }
     }
 </style>
 
