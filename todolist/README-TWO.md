@@ -1,5 +1,6 @@
 Shayna Putri Fitria - 2106703084
 
+Link Deploy - https://shaynaskatalog.herokuapp.com/todolist/
 
 # **Tugas 6 - Javascript dan AJAX**
 
